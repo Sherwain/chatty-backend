@@ -1,0 +1,1007 @@
+    1  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    2  brew update
+    3  brew
+    4   brew help
+    5  Install Shell Integration
+    6  curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+    7  source ~/.iterm2_shell_integration.zsh
+    8  sudo vim /etc/shells
+    9  chsh -s /usr/local/bin/zsh
+   10  sudo vim /etc/shells
+   11  which zsh
+   12  sudo vim /etc/shells
+   13  chsh /opt/homebrew/bin/zsh
+   14  chsh -s /opt/homebrew/bin/zsh
+   15  vim ~/.zshrc
+   16  brew install romkatv/powerlevel10k/powerlevel10k
+   17  vim ~/.zshrc
+   18  echo $SHELL
+   19  cd p/s<TAB>
+   20  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   21  p10k configure
+   22  which p10k
+   23  brew install romkatv/powerlevel10k/powerlevel10k
+   24  powerlevel10k
+   25  which powerlevel10k
+   26  brew install zsh-syntax-highlighting
+   27  vim ~/.zshrc
+   28  brew install zsh-autosuggestions
+   29  vim ~/.zshrc
+   30  brew install zsh-history-substring-search
+   31  vim ~/.zshrc
+   32  source
+   33  source ~/.zshrc
+   34  which zsh-history-substring-search
+   35  whereis zsh-history-substring-search
+   36  brew install romkatv/powerlevel10k/powerlevel10k
+   37  source ~/.zshrc
+   38  vim ~/.zshrc
+   39  source ~/.zshrc
+   40  vim ~/.zshrc
+   41  source ~/.zshrc
+   42  git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+   43  source ~/.zshrc
+   44  vim ~/.zshrc
+   45  pwd
+   46  ls
+   47  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   48  vim ~/.zshrc
+   49  brew install node
+   50  brew install htop
+   51  brew install fzf $(brew --prefix)/opt/fzf/install
+   52  brew install fzf
+   53  $(brew --prefix)/opt/fzf/install
+   54  pwd
+   55  history | grep
+   56  brew install lnav
+   57  brew install maccy
+   58  brew install --cask rectangle
+   59  brew install --cask gimp
+   60  brew uninstall --cask gimp
+   61  brew
+   62  homebrew
+   63  which brew
+   64  defaults write com.apple.Finder AppleShowAllFiles true
+   65  /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"\n\n\n'
+   66  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+   67  brew help
+   68  /opt/homebrew/bin/brew help
+   69  brew
+   70  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/sherwain/.zprofile
+   71   eval "$(/opt/homebrew/bin/brew shellenv)"
+   72  brew help
+   73  brew update
+   74  brew doctor
+   75  brew install --cask iterm2
+   76  brew install --cask \\n  bitwarden \\n  google-chrome  \\n  firefox \\n  visual-studio-code \\n  maccy
+   77  brew install git
+   78  brew install jesseduffield/lazygit/lazygit
+   79  brew install lazygit
+   80  brew install git-delta
+   81  brew install zsh
+   82  brew install --cask alfred
+   83  brew install npm
+   84  python
+   85  python3
+   86  brew tap mongodb/brew
+   87  brew update
+   88  brew install mongodb-community@6.0
+   89  brew --prefix
+   90  printenv > /var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/tmp-17876b9CxuMNFeCoetxt
+   91  brew install spotify
+   92  npm init
+   93  node test.js
+   94  git
+   95  git config --global user.name "Sherwain Williamson"
+   96  git config --global user.email "sherwianwilliamson@yahoo.com"
+   97  pwd
+   98  ls
+   99  mkdir text
+  100  cd text
+  101  git init
+  102  ls
+  103  cd ../
+  104  git clone git@github.com:Sherwain/yelp-camp.git
+  105  ls
+  106  eval "$(ssh-agent -s)"
+  107  ssh-add -l -E sha256
+  108  ssh -vT git@github.com
+  109  ssh -T Sherwain@github.com
+  110  ssh -T git@github.com
+  111  ssh-add -l -E sha256
+  112  ls -al ~/.ssh
+  113  ssh-keygen -t ed25519 -C "sherwainwilliamson@yahoo.com"
+  114  eval "$(ssh-agent -s)"
+  115  open ~/.ssh/config
+  116  touch ~/.ssh/config
+  117  open ~/.ssh/config
+  118  ssh-add -K ~/.ssh/id_ed25519
+  119  cat ~/.ssh/id_ed25519
+  120  cat ~/.ssh/id_ed25519.pub
+  121  pbcopy < ~/.ssh/id_ed25519.pub
+  122  ssh -T git@github.com
+  123  git clone git@github.com:Sherwain/yelp-camp.git
+  124  ls
+  125  mkdir git-projects
+  126  cd git-projects
+  127  git clone git@github.com:Sherwain/yelp-camp.git
+  128  git clone git@github.com:Sherwain/shopping-cart.git
+  129  git clone git@github.com:Sherwain/gitroot.git
+  130  npm install
+  131  npm install nodemon -g
+  132  git status
+  133  git add .
+  134  git checkout shopping-chart-in-memory
+  135  git checkout -b shopping-chart-in-memory
+  136  git commit -m 'Shopping cart without database'
+  137  git checkout master
+  138  ipconfig
+  139  ipconfig getsummary
+  140  brew install mongosh
+  141  npm install --save mongodb -g
+  142  npm install mongodb -g
+  143  npm install mongodb
+  144  npm install mongodb --save
+  145  node
+  146  brew tap redis-stack/redis-stack
+  147  brew install --cask redis-stack
+  148  redis-cli
+  149  redis-server
+  150  redis-cli
+  151  npm install redis
+  152  npm install redis --save
+  153  brew install --cask docker
+  154  pwd
+  155  cd git-projects
+  156  git clone https://github.com/redislabs-training/node-js-crash-course.git
+  157  cd node-js-crash-course
+  158  npm install
+  159  npm audit
+  160  docker ps
+  161  docker-compose up -d
+  162  docker-compose up --build
+  163  docker-compose up -d
+  164  brew services stop redis
+  165  docker-compose up -d
+  166  docker ps
+  167  pwd
+  168  docker exec -it fb6c289bb48a61e88d242dc956ac01c33f883d00a5594012c14da9977fcca68e /bin/sh
+  169  npm run load all
+  170  docker exec -it fb6c289bb48a61e88d242dc956ac01c33f883d00a5594012c14da9977fcca68e /bin/sh
+  171  docker exec -it rediscrashcourse redis-cli
+  172  docker ps
+  173  docker exec -it rediscrashcourse redis-cli
+  174  npm run load all
+  175  docker exec -it rediscrashcourse redis-cli
+  176  docker-compose up -d
+  177  docker ps
+  178  docker exec -it rediscrashcourse redis-cli
+  179  docker start rediscrashcourse
+  180  docker exec -it fb6c289bb48a61e88d242dc956ac01c33f883d00a5594012c14da9977fcca68e /bin/sh
+  181  docker exec -it rediscrashcourse redis-cli
+  182  docker-compose up -d
+  183  docker exec -it rediscrashcourse redis-cli
+  184  npm run dev
+  185  npm run checkinprocessor delay
+  186  $ export WEATHER_API_KEY=015d2060ba5d36332e0b80d385032c79
+  187  export WEATHER_API_KEY=015d2060ba5d36332e0b80d385032c79
+  188  npm run dev
+  189  npm run checkinreceiver auth
+  190  npm run auth
+  191  npm run checkingroupprocessor
+  192  npm run checkingroupprocessor consumer1
+  193  npm run checkingroupprocessor consumer2
+  194  npm run checkinreceiver
+  195  npm run checkingenerator
+  196  git add .
+  197  git status
+  198  git commit -m 'Add modifications from exercise'
+  199  npm install dotenv --save
+  200  npm install connect-redis redis redis-rejson cors --save
+  201  git status
+  202  touch .env
+  203  nodemon index.js
+  204  npm udate
+  205  npm update
+  206  nodemon index.js
+  207  npm install http-status-codes --save
+  208  redis-cli
+  209  /usr/bin/env 'NODE_OPTIONS=--require "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js" --inspect-publish-uid=http' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-cdp.44481-5.sock","deferredMode":false,"waitForDebugger":"","execPath":"/opt/homebrew/bin/node","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-debug-callback-435086a1de7edf9a"}' /opt/homebrew/bin/nodemon ./index.js 
+  210  redis-cli
+  211  brew services info redis
+  212  redis-server
+  213  redis-cli
+  214  brew services info redis
+  215  brew services start redis
+  216  brew services info redis-server
+  217  brew services start redis
+  218  brew services list
+  219  brew install redis
+  220  brew services list
+  221  brew services info redis
+  222  brew services start redis
+  223  brew services info redis
+  224  redis-cli
+  225  whereis redis
+  226  which redis
+  227  resdi
+  228  resid
+  229  redis
+  230  nodemon test-redis.js
+  231  nodemon index.js
+  232  docker -version
+  233  docker --version
+  234  docker version
+  235  node --version
+  236  docker image
+  237  docker image ls
+  238  git status
+  239  pwd
+  240  cd git-projects
+  241  git clone https://github.com/redis-developer/basic-redis-shopping-chart-nodejs
+  242  cd basic-redis-shopping-chart-nodejs
+  243  docker network create global
+  244  docker-compose up -d --build
+  245  ls
+  246  cd server
+  247  docker-compose up -d --build
+  248  docker compose ps
+  249  pwd
+  250  cp .env.example .env
+  251  npm install
+  252  npm run dev
+  253  pwd
+  254  cd ../client
+  255  npm run serve
+  256  pwd
+  257  npm install
+  258  cp .env.example .env
+  259  ls
+  260  ls .env
+  261  cat .env
+  262  vim .env
+  263  npm install
+  264  pwd
+  265  code .
+  266  ls /Users/sherwain/.npm/eresolve-report.txt
+  267  npm install --legacy-peer-deps
+  268  npm audit fix
+  269  npm install
+  270  npm run serve
+  271  npm update
+  272  npm audit
+  273  npm audit fix
+  274  node -v && vue -V && npm -v
+  275  npm run serve
+  276  npm install nodemon -g --save-dev
+  277  nodemon -version
+  278  nodemod -help
+  279  nodemod --help
+  280  nodemon --help
+  281  npm uninstall nodemon
+  282  npm install nodemon -g
+  283  which node .
+  284  which nodemon .
+  285  /usr/bin/env 'NODE_OPTIONS=--require "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js"' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-cdp.8508-9.sock","deferredMode":false,"waitForDebugger":"","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-debug-callback-5788ef69c553b5fa"}' /opt/homebrew/bin/nodemon ./index.js 
+  286  npm run serve
+  287  redis-cli info modules
+  288  redis-cli
+  289  npm upgrade redis
+  290  redis-cli info modules
+  291  redis-cli
+  292  which rejson .
+  293  which re-json .
+  294  npm update
+  295  ls
+  296  ls /usr/lib/redis/modules/rejson.so
+  297  ls /usr/lib/redis/modules/
+  298  ls /usr/lib/redis/
+  299  which redis .
+  300  which redis-server .
+  301  redis 
+  302  which redis-server .
+  303  ls /etc/redis/modules/
+  304  ls /etc/redis/
+  305  brew services info redis
+  306  npm install redis-rejson
+  307  pm uninstall redis-rejson
+  308  npm uninstall redis-rejson
+  309  npm install redis-rejson
+  310  pm uninstall redis-rejson
+  311  npm uninstall redis-rejson
+  312  npm run dev
+  313  npm install redis-rejson
+  314  npm run dev
+  315  pwd
+  316  cd ../server
+  317  docker network create global
+  318  docker-compose up -d --build
+  319  brew services stop redis
+  320  docker-compose up -d --build
+  321  npm run dev
+  322  cd 
+  323  pwd
+  324  cd git-projects
+  325  ls
+  326  cd basic-redis-shopping-chart-nodejs
+  327  ls
+  328  brew services info redis
+  329  brew services start redis
+  330  brew services info redis
+  331  pwd
+  332  cd ../
+  333  pwd\\n/
+  334  pwd
+  335  git clone git@github.com:RedisJSON/RedisJSON.git
+  336  ls
+  337  cd RedisJSON
+  338  make
+  339  brew install homebrew/core/make
+  340  make
+  341  which make
+  342  whereis make
+  343  cargo build --release
+  344  pwd
+  345  la
+  346  ls
+  347  tar -zxvf make-4.3.tar
+  348  cd git-projects/RedisJSON
+  349  /Users/sherwain/make-4.3/mk/
+  350  ./Users/sherwain/make-4.3/mk/
+  351  which make
+  352  /usr/bin/make
+  353  pwd
+  354  cd ../../git-projects/RedisJSON
+  355  /usr/bin/make
+  356  make -v
+  357  brew update make
+  358  brew upgrade make
+  359  brew upgrade
+  360  make -v
+  361  /usr/bin/make
+  362  brew info make
+  363  brew info gmake
+  364  gmake 
+  365  PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+  366  make -v
+  367  which make
+  368  /opt/homebrew/opt/make/libexec/gnubin/make
+  369  brew instill rustc
+  370  brew install rustc
+  371  which rustc
+  372  whereis rustc
+  373  brew install cargo
+  374  brew install rust
+  375  /opt/homebrew/opt/make/libexec/gnubin/make
+  376  ls /usr/local/bin
+  377  cd bin/macos-arm64v8-release/target /usr/local/bin/
+  378  cp bin/macos-arm64v8-release/target /usr/local/bin/
+  379  cp bin/macos-arm64v8-release/rejson.so /usr/local/bin/
+  380  sudo cp bin/macos-arm64v8-release/rejson.so /usr/local/bin/
+  381  ls /usr/local/bin
+  382  ls /usr/lib/redis/
+  383  ls /usr/lib/
+  384  mkdir /usr/lib/redis
+  385  mkdir /usr/lib/redis/modules
+  386  mkdir /usr/lib/redis
+  387  sudo mkdir /usr/lib/redis
+  388  ls /usr/local/bin/
+  389  brew services info redis
+  390  brew services stop redis
+  391  redis-server --loadmodule /usr/local/bin//rejson.so
+  392  redis-cli
+  393  redis-server
+  394  redis-cli
+  395  redis-server
+  396  brew service info redis
+  397  brew services info redis
+  398  redis-server --loadmodule /usr/local/bin/rejson.so
+  399  docker version
+  400  docker-compose --version
+  401  docker build -t shopping-cart-app:1.0 . 
+  402  docker ps
+  403  docker build -t shopping-cart-app:1.0 . 
+  404  docker ps
+  405  docker image ls
+  406  docker images rm RUN npm install
+  407  docker image ls
+  408  docker images rm redislabs/rejson
+  409  docker image rm redislabs/rejson
+  410  docker image frm redislabs/rejson
+  411  docker image rm --help
+  412  docker image rm -f redislabs/rejson
+  413  docker image ls
+  414  docker image rm -f docker alpine/git
+  415  docker image rm -f alpine/git
+  416  docker image rm -f sherwain/docker101tutorial
+  417  docker image ls
+  418  docker image rm -f sherwain/docker101tutorial
+  419  docker image ls
+  420  docker image rm -f redislabs/redismod
+  421  docker image ls
+  422  docker image rm -f docker101tutorial
+  423  docker ps
+  424  docker-compose -f docker-compose.yml up
+  425  docker ps
+  426  docker-compose -f docker-compose.yml down
+  427  docker ps
+  428  docker-compose -f docker-compose.yml down
+  429  docker ps
+  430  docker rm -f redis.shoppingcart.docker
+  431  docker rm -f redis-shopping-cart_mongodb_1
+  432  docker ps
+  433  docker-compose -f docker-compose.yml up -d
+  434  docker network
+  435  docker network ls
+  436  docker build -t shopping-cart-app:1.0 . 
+  437  docker image ls
+  438  docker run shopping-cart-app:1.0
+  439  docker run shopping-cart-app:1.0 sherwain/shopping-cart-app
+  440  docker ps
+  441  docker exec -it 9ac4c5733b09 /bin/bask
+  442  docker exec -it 9ac4c5733b09 /bin/bash
+  443  docker ps
+  444  docker rm -f 9332c2779caf 9ac4c5733b09
+  445  docker ps
+  446  docker images ls
+  447  docker images
+  448  docker rmi <none>
+  449  docker rmi shopping-cart-app:1.0
+  450  docker rmi mongo
+  451  docker rmi node-js-crash-course_node
+  452  docker rmi redislabs/rejson
+  453  docker images
+  454  docker images -a
+  455  docker ps -a
+  456  docker ps rm -f f38f49348ecd
+  457  dockerrm -f f38f49348ecd
+  458  docker rm -f f38f49348ecd
+  459  docker rm -f 1d47d5af8247 0b404cfa8e03
+  460  brew services info redis
+  461  brew services stop redis
+  462  brew uninstall redis
+  463  docker-compose -f docker-compose.yml up -d
+  464  docker exec -it cbeab11d1d9d47ed3e464cb3126f6d60f771e6ff3f73c81e5c393dc7d1218472 /bin/sh
+  465  docker build -t shopping-cart-app:1.0 . 
+  466  docker ps -a
+  467  docker rm -f 36552f47cb49 cbeab11d1d9d
+  468  docker network ls
+  469  docker network rm c2225692bc80 04fcebc37044 22963b4c4e96
+  470  docker network ls
+  471  docker network rm 7a74feedbac4
+  472  docker network ls
+  473  doceker ps -a
+  474  docker ps -a
+  475  docker images -a
+  476  docker rmi redislabs/rejson node-js-crash-course_node mongo shopping-cart-app
+  477  docker images -a
+  478  docker rmi  shopping-cart-app:1.0
+  479  docker images -a
+  480  docker network create global
+  481  docker-compose up -d --build -d
+  482  docker-compose up -d --build
+  483  docker-compose ps
+  484  docker ps
+  485  nodemon index.js
+  486  npm install
+  487  nodemon index.js
+  488  docker exec -it 6a95ca3d9ec2d46a3fb7c6c1bd10b40f3d48547069dcf10fb1b14afdd9ce2d8f /bin/sh
+  489  nodemon index.js
+  490  brew services info redis
+  491  redis-cli
+  492  docker network ls
+  493  cargo build --release
+  494  docker ps all
+  495  docker ps -a
+  496  docker rm -f 6a95ca3d9ec2 593f7d097525
+  497  docker image -a
+  498  docker images -a
+  499  docker image rmi f48316b861d7 5f91cb7f47f4 c58a343324a3
+  500  docker images -a
+  501  docker ps -a
+  502  docker-compose up -d --build
+  503  nodemon index.js
+  504  docker network create scglobal
+  505  docker networks
+  506  docker networks ls
+  507  docker network ls
+  508  docker-compose up -d --build
+  509  npm install
+  510  npm install @redis/json
+  511  npm install 
+  512  docker exec -it 6a95ca3d9ec2d46a3fb7c6c1bd10b40f3d48547069dcf10fb1b14afdd9ce2d8f /bin/sh
+  513  redis-cli
+  514  docker ps -a
+  515  docker ps rm - redis.redisshoppingcart.docker redis.shopping-cart mongodb.shopping-cart
+  516  docker ps rm -f redis.redisshoppingcart.docker redis.shopping-cart mongodb.shopping-cart
+  517  docker ps rm -f 7a90ee38d59e d670b78857fa 40058dcf30bb
+  518  dockerrm -f 7a90ee38d59e d670b78857fa 40058dcf30bb
+  519  docker rm -f 7a90ee38d59e d670b78857fa 40058dcf30bb
+  520  docker images
+  521  docker rmi redislabs/rejson mongo
+  522  docker images -a
+  523  docker network ls
+  524  doccker network rm scglobal shopping-cart_default global
+  525  docker network rm scglobal shopping-cart_default global
+  526  docker network ls
+  527  npm install
+  528  docker network create global
+  529  docker-compose up -d --build
+  530  npm install
+  531  npm run dev
+  532  docker network ls
+  533  docker network rm 5f5d6a11c571
+  534  docker network rm global
+  535  docker network ls
+  536  docker ps -0a
+  537  docker ps -a
+  538  docker rm 4b35b136dfac
+  539  docker rm -f 4b35b136dfac
+  540  docker images -a
+  541  docker rmi redislabs/rejson
+  542  docker network rm  global
+  543  docker network create global
+  544  docker-compose up -d --build
+  545  nodemon index.js
+  546  docker-compose down 
+  547  docker-compose up -d --build
+  548  docker ps -a
+  549  docker rm f 6f5d811880c4 911a0a4f70ca
+  550  docker rm -f 6f5d811880c4 911a0a4f70ca
+  551  docker images -a
+  552  docker rmi redislabs/rejson mongo
+  553  docker network rm  global
+  554  docker-compose up -d --build
+  555  docker network create global
+  556  docker-compose up -d --build
+  557  npm install
+  558  npm run dev
+  559  docker ps -a
+  560  docker rm -f f74834d19660
+  561  docker images -a
+  562  docker rmi redislabs/rejson
+  563  docker-compose up -d --build
+  564  resdis-cli
+  565  redis-cli
+  566  npm install
+  567  npm install redis
+  568  redis-cli
+  569  redis-server
+  570  redis-cli info modules
+  571  redis-cli
+  572  npm -v redis
+  573  npm upgrade redis
+  574  nodemon managing-json.js
+  575  redis-cli info modules
+  576  nodemon managing-json.js
+  577  redis-server --loadmodule /usr/local/bin/rejson.so
+  578  /usr/bin/env 'NODE_OPTIONS=--require "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js"' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-cdp.8508-9.sock","deferredMode":false,"waitForDebugger":"","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-debug-callback-5788ef69c553b5fa"}' /opt/homebrew/bin/nodemon ./managing-json.js 
+  579  docker-compose down
+  580  docker ps -a
+  581  docker images -a
+  582  docker rmi mongo redislabs/rejson
+  583  docker ps -a
+  584  docker-compose up -d --build
+  585  redis-server --loadmodule /usr/local/bin/rejson.so
+  586  docker-compose down
+  587  docker-compose up -d --build
+  588  redis-server
+  589  docker-compose down
+  590  docker ps -a
+  591  docker images -a
+  592  docker rmi 13501e64d58f c58a343324a3
+  593  docker-compose up -d --build
+  594  redis-server --loadmodule /usr/local/bin/rejson.so
+  595  docker exec -it 00c834a202cc58b933339d9f90a862c3e319a9565dc82a748d8f682b0f33f02a /bin/sh
+  596  brew services info redis
+  597  redis-server --daemonize yes
+  598  sudo service redis-server status
+  599  redis-server status
+  600  brew services info redis
+  601  brew services start redis
+  602  docker exec -it 00c834a202cc58b933339d9f90a862c3e319a9565dc82a748d8f682b0f33f02a /bin/sh
+  603  redis-server
+  604  brew services info redis
+  605  which redis-server 
+  606  redis-server --help
+  607  npm run redis\n
+  608  npm install redis\n
+  609  nodemon index.js
+  610  redis-cli info modules
+  611  redis-cli 
+  612  redis-server --loadmodule /usr/local/bin/rejson.so
+  613  nodemon index.js
+  614  which redis-server 
+  615  docker-compose down
+  616  docker ps -a
+  617  docker  images -a
+  618  doceker rmi mongo redislabs/rejson
+  619  docker rmi mongo redislabs/rejson
+  620  brew uninstall redis-sever
+  621  which redis-server 
+  622  brew uninstall /opt/homebrew/bin/redis-server
+  623  brew remove redis-sever
+  624  brew remove /opt/homebrew/bin/redis-server
+  625  brew remove redis-stack
+  626  which redis-server 
+  627  redis-cli
+  628  which redis-cli
+  629  ls -al $(which redis-server)
+  630  sudo rm -f /opt/homebrew/bin/redis*
+  631  which redis-cli
+  632  which redis-server 
+  633  which redis
+  634  brew services info redis
+  635  docker-compose up -d --build
+  636  brew services info redis
+  637  which redis
+  638  which redis-server 
+  639  docker exec -it a00ce7baafce80c87462edabbf86329bd529a68eedd1a666e9048c842bae0b15 /bin/sh
+  640  nodemon index.js
+  641  docker-compose down
+  642  docker ps -a
+  643  docker images -a
+  644  docker rmi mongo redislabs/rejson
+  645  docker network create global
+  646  docker-compose up -d --build
+  647  npm run dev
+  648  which redis-server 
+  649  docker-compose down
+  650  docker ps -a
+  651  docker images -a
+  652  docker rmi redislabs/rejson
+  653  docker-compose up -d --build
+  654  npm run dev
+  655  docker-compose down
+  656  docker ps -a
+  657  docker images -a
+  658  docker rmi redislabs/rejson mongo
+  659  docker-compose up -d --build
+  660  npm run dev
+  661  docker networks ls
+  662  docker network ls
+  663  docker network rm  global
+  664  docker networks rm  global
+  665  docker network rm  global
+  666  docker rm  global
+  667  docker network rm  global
+  668  docker-compose down
+  669  docker images -a
+  670  docker rmi redislabs/rejson
+  671  docker network rm  global
+  672  npm run dev
+  673  docker network create global
+  674  docker-compose up -d --build
+  675  docker exec -it f8516a9f469002b537340d6f47f837fbfc4b182656bb1bc05b6b4dbb1441e9da /bin/sh
+  676  npm run dev
+  677  docker-compose down
+  678  docker network rm  global
+  679  docker rmi redislabs/rejson
+  680  docker images -a
+  681  docker ps -a
+  682  docker networks ls
+  683  docker network ls
+  684  docker network create global
+  685  docker-compose up -d --build
+  686  nodemon index.js
+  687  redis-cli
+  688  docker exec -it bb294952450a0e17e06e604d1889d1da9756e7264a61db59bda317f6eb20f5fb /bin/sh
+  689  docker exec -it d8caef75d92b4548eb7647be29950348b13d2dbfe92fbf5d7db9e6a62df0491a /bin/sh
+  690  docker network ls
+  691  docker ps 0a
+  692  docker ps -a
+  693  docker rm -f bb294952450a d8caef75d92b
+  694  docker images -a
+  695  docker rmi d8caef75d92b d8caef75d92b
+  696  docker rmi mongo redislabs/rejson
+  697  docker images -a
+  698  docker ps -a
+  699  docker-compose up -d --build
+  700  nodemon index.js
+  701  docker-compose down
+  702  docker images -a
+  703  docker rmi mongo redislabs/rejson
+  704  docker-compose up -d --build
+  705  nodemon index.js
+  706  npm run dev
+  707  nodemon index.js
+  708  docker-compose down
+  709  docker rmi mongo redislabs/rejson
+  710  docker-compose up -d --build
+  711  nodemon index.js
+  712  docker-compose down
+  713  docker ps -a
+  714  docker rmi mongo redislabs/rejson
+  715  docker netwrk rm global
+  716  docker network rm global
+  717  docker-compose down
+  718  docker-compose up -d --build
+  719  docker network -a
+  720  docker network la
+  721  docker network ls
+  722  nodemon index.js
+  723  docker exec -it c1c417a9bc618b20c19b03db41ec28939c34065cd0f01d92d0ea3c968b313760 /bin/sh
+  724  docker-compose down
+  725  docker rmi mongo redislabs/rejson mongo
+  726  docker-compose up -d --build
+  727  nodemon index.js
+  728  docker ps -a
+  729  doccker rm f 30c29d15b06e 3d5ad1182f5c
+  730  docker rm f 30c29d15b06e 3d5ad1182f5c
+  731  docker rm -f 30c29d15b06e 3d5ad1182f5c
+  732  docker rmi mongo redislabs/rejson
+  733  netstat
+  734  netstat -anvp tcp | awk 'NR<3 || /LISTEN/'
+  735  lsof -Pn -i4
+  736  docker-compose up -d --build
+  737  docker network create global
+  738  docker-compose up -d --build
+  739  docker exec -it 846f6dc202677a109a49c0c26b8939dd9d0cd5e2c9a3fcd3d0e2068c96ea8937 /bin/sh
+  740  nodemon index.js
+  741  ps aux | grep redis
+  742  brew install redis
+  743  nodemon index.js
+  744  redis-server
+  745  nodemon index.js
+  746  redis-server --loadmodule /usr/lib/redis/modules/rejson.so
+  747  brew uninstall redis
+  748  rm -rf /opt/homebrew/etc/redis-sentinel.conf /opt/homebrew/etc/redis-stack.conf /opt/homebrew/etc/redis.conf
+  749  nodemon index.js
+  750  docker-compose down
+  751  docker rmi mongo redislabs/rejson
+  752  docker-compose up -d --build
+  753  nodemon index.js
+  754  nodemon managing-json.js
+  755  nodemon index.js
+  756  docker exec -it 43c5185296f685737445ebd9b3634f2da5f572e925c0564f634c5f6372db4614 /bin/sh
+  757  npm install bcrypt express-validator morgan better-config\n
+  758  nodemon auth.js
+  759  npm uninstall bcrypt express-validator morgan better-config\n
+  760  node test.js
+  761  nodemon index.js
+  762  nodemon test-redis.js
+  763  docker-compose down
+  764  docker-compose up -d --build
+  765  npm run serve
+  766  npm run dev
+  767  docker exec -it b7509c31ac3f7bb8003e16e4f7b683c6b2e326c8f7aa1760669018ad2f28660e /bin/sh
+  768  npm install connect-flash --save
+  769  HGETALL caart:62fe7de8a32948f41c162b7d
+  770  docker exec -it 3d2be1798f4941e3aafe29d0032f7ca03752373c21490dfc30466e688606516f /bin/sh
+  771  nodemon test-redis.js
+  772  docker-compose d
+  773  docker-compose down
+  774  docker-compose up -d --build
+  775  docker-compose up -d --build cd /Users/sherwain/git-projects/shopping-cart ; /usr/bin/env 'NODE_OPTIONS=--require "/Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js" --inspect-publish-uid=http' 'VSCODE_INSPECTOR_OPTIONS={"inspectorIpc":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-cdp.2744-4.sock","deferredMode":false,"waitForDebugger":"","execPath":"/opt/homebrew/bin/node","onlyEntrypoint":false,"autoAttachMode":"always","fileCallback":"/var/folders/zr/9100s8ls2pn67gmvg95f7wnh0000gn/T/node-debug-callback-c9d285f7534aa6bf"}' /opt/homebrew/bin/nodemon ./index.js 
+  776  npm install
+  777  node
+  778  nodemon index.js
+  779  npm install node-sass --dev
+  780  npm uninstall node-sass 
+  781  npm uninstall node-sass -save-dev
+  782  npm install node-sass --save-dev
+  783  npm compile:sass
+  784  npm run compile:sass
+  785  pwd
+  786  git status
+  787  git add .
+  788  git checkout shopping-chart-with-native-mongodb
+  789  history | grep | checkout
+  790  history | grep  checkout
+  791  git checkout -b shopping-chart-with-native-mongodb
+  792  git checkout master 
+  793  npm install mongoose --save
+  794  npm audit
+  795  npm audit fix
+  796  mongosh
+  797  npm run compile:sass
+  798  npm install bcryptjs --save
+  799  npm uninstall bcryptjs
+  800  npm install bcrypt
+  801  npm uninstall bcrypt
+  802  npm install bcryptjs --save
+  803  npm install csurf --save
+  804  pwd
+  805  cd /Users/sherwain/git-projects
+  806  git clone git@github.com:evondev/youtube.git
+  807  npm run compile:sass
+  808  npm install nodemailer --save
+  809  npm install nodemailer nondemailer-sendgrid-transport --save
+  810  npm install nodemailer-sendgrid-transport --save
+  811  npm audit fix
+  812  npm install joi --save
+  813  npm install sanitize-html joi --save
+  814  npm run compile:sass
+  815  npm install passport passport-local --save
+  816  npm install express-mongo-sanitize morgan --save
+  817  npm audit fix
+  818  npm install passport-local-mongoose --save
+  819  npm install multer --save
+  820  npm install cloudinary --save
+  821  npm install multer-storage-cloudinary --save
+  822  npm audit fix
+  823  npm run compile:sass
+  824  npm install cookie-parser --save
+  825  npm uninstall cookie-parser
+  826  npm uninstall body-parser
+  827  npm install cookie-parser --save
+  828  npm install body-parser --save
+  829  pwd
+  830  cd /Users/sherwain/git-projects
+  831  mkdir vue-tutorial
+  832  cd vue-tutorial
+  833  mkdir vue-tutorial-01
+  834  cd vue-tutorial-01
+  835  cd ../
+  836  pwd
+  837  ls
+  838  ls ../
+  839  ls ../../
+  840  cd friend-list
+  841  npm init 
+  842  docker build -t vue-app:1.0 .
+  843  history | grep  `docker `
+  844  history | grep  'docker '
+  845  docker build -t vue-app:1.0 .
+  846  npm install @vue/cli --save
+  847  npm audit
+  848  vue create vue-first-app
+  849  npm uninstall @vue/cli 
+  850  npm install -g @vue/cli --save
+  851  vue
+  852  vue create vue-first-app
+  853  cd vue-first-app
+  854  cd ../
+  855  ls
+  856  cd vue-first-app
+  857  npm run serve
+  858  ls
+  859  cd vue-first-app
+  860  ls
+  861  npm run serve
+  862  npm install
+  863  npm run serve
+  864  npm run build
+  865  npm install babel-eslint --save-dev
+  866  npm run build
+  867  npm run serve
+  868  python --version
+  869  python -version
+  870  python -v
+  871  python
+  872  pyth
+  873  pyhton
+  874  python3
+  875  python --v
+  876  python -v
+  877  python3 -v
+  878  pip install python3
+  879  brew install pip
+  880  npm install babel-eslint --save-dev
+  881  npm audit fix --force
+  882  npm run serve
+  883  npm install
+  884  npm run serve
+  885  npm install
+  886  npm audit fix --force
+  887  npm run serve
+  888  cd ~/
+  889  cd ../
+  890  pwd
+  891  ls
+  892  cd sherwain/git-projects/vue-tutorial/vue-tutorial/
+  893  vue create resource-project
+  894  npm run serve
+  895  npm install
+  896  npm audit fix --force
+  897  npm run serve
+  898  npm install autoprefixer@10.4.5 --save-exact
+  899  npm install autoprefixer --save-exact
+  900  npm install autoprefixer 
+  901  npm run serve
+  902  npm i -D eslint@7.32.0
+  903  npm run serve
+  904  npm install
+  905  npm run serve
+  906  npm install
+  907  npm audit fix --force
+  908  npm run serve
+  909  npm i -D eslint@7.32.0
+  910  npm run serve
+  911  npm install --save vue-router
+  912  npm install
+  913  npm audit fix --force
+  914  npm run serve
+  915  npm i -D eslint@7.32.0
+  916  npm run serve
+  917  npm install
+  918  npm run serve
+  919  npm install vuex@latest --save
+  920  npm install
+  921  npm audit fix --force
+  922  npm run serve
+  923  npm audit fix --force
+  924  npm run serve
+  925  npm install vuex@latest --save
+  926  npm install
+  927  npm i -D eslint@7.32.0
+  928  npm install vuex@latest --save
+  929  npm install --save vue-router
+  930  npm run serve
+  931  npm install crypto --save
+  932  npm i uuid
+  933  npm uninstall crypto
+  934  npm install firebase
+  935  npm install -g firebase-tools
+  936  npm audit fix --force
+  937  npm run build
+  938  npm install -g firebase-tools
+  939  npm audit fix --force
+  940  firebase login
+  941  firebase init
+  942  npm run build
+  943  firebase deploy
+  944  npm install
+  945  npm audit fix --force
+  946  npm run serve
+  947  npm i -D eslint@7.32.0
+  948  npm run serve
+  949  npm run compile:sass
+  950  nodemon index.js
+  951  npm install --save stripe
+  952  npm audit fix
+  953  npm audit fix --force
+  954  cd sherwain/git-projects/
+  955  cd ~/sherwain/git-projects/
+  956  pwd
+  957  cd git-projects
+  958  ls
+  959  npm install
+  960  npm run compile:sass
+  961  npm install
+  962  npm audit fix --force
+  963  npm start
+  964  redis
+  965  redis-cli
+  966  redis-server
+  967  pwd
+  968  cd git-projects
+  969  mkdir chatty-backend
+  970  cd chatty-backend
+  971  pwd
+  972  cd chatty-backend
+  973  code .
+  974  npm init -y
+  975  npm install typescript
+  976  tsc init
+  977  tsc --init
+  978  tsc
+  979  npm install typescript -g
+  980  tsc
+  981  tsc --init
+  982  cd src
+  983  mkdir features
+  984  nmp install express --save
+  985  npm install express --save
+  986  npm i --save-dev @types/express
+  987  npm install cookie-session compression express-async-errors http-status-codes
+  988  npm install cors helmet hpp
+  989  npm i --save-dev @types/cors
+  990  npm i --save-dev @types/cookie-session
+  991  npm i --save-dev @types/hpp
+  992  npm i --save-dev @types/compression
+  993  npm i -g nodemon
+  994  npm run dev
+  995  npm install ts-node -d
+  996  npm uninstall ts-node
+  997  npm install ts-node -D
+  998  npm run dev
+  999  npm install --save-dev tsconfig-paths
+ 1000* npm run dev
+ 1001  npm install mongoose --save
+ 1002  npm install env
+ 1003  npm i --save-dev @types/env
+ 1004  npm install dotenv --save
+ 1005  npm install @socekt.io/redis-adapter
+ 1006  npm install @socket.io/redis-adapter
+ 1007  history | grep  'docker \n'
