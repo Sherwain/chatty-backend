@@ -1,10 +1,9 @@
+import { CloudinaryStorage } from "multer-storage-cloudinary";
 import dotenv from "dotenv";
-import bunyan from "bunyan";
-import Logger from "bunyan";
-import log from "./shared/globals/logger";
+import log from "@global/utils/logger";
+const cloudinary = require("cloudinary").v2;
 
 dotenv.config({});
-
 class Config {
   public MONGODB: string | undefined;
   public MONGODB_USER: string | undefined;
@@ -18,6 +17,10 @@ class Config {
   public REDIS_PASSWORD: string | undefined;
   public REDIS_HOST: string | undefined;
   public REDIS_PORT: string | undefined;
+  public CLOUDINARY_NAME: string | undefined;
+  public CLOUDINARY_API_KEY: string | undefined;
+  public CLOUDINARY_API_SECRET: string | undefined;
+  public CLOUDINARY_FOLDER: string | undefined;
   public LOG = log;
 
   constructor() {
@@ -30,6 +33,11 @@ class Config {
     this.SECRET_KEY_ONE = process.env.SECRET_KEY_ONE;
     this.SECRET_KEY_TWO = process.env.SECRET_KEY_TWO;
     this.CLIENT_URL = process.env.CLIENT_URL;
+
+    this.CLOUDINARY_NAME = process.env.CLOUDINARY_NAME;
+    this.CLOUDINARY_API_KEY = process.env.CLOUDINARY_API_KEY;
+    this.CLOUDINARY_API_SECRET = process.env.CLOUDINARY_API_SECRET;
+    this.CLOUDINARY_FOLDER = process.env.CLOUDINARY_FOLDER;
 
     this.REDIS_PASSWORD = process.env.REDIS_PASSWORD;
     this.REDIS_HOST = process.env.REDIS_HOST;
@@ -44,23 +52,13 @@ class Config {
     }
   }
 
-  // public log = (function (name: string) {
-  //   let logger: Logger;
-
-  //   function createInstance(name: string): Logger {
-  //     console.log("Creating instance of logger");
-  //     return bunyan.createLogger({ name, level: "debug" });
-  //   }
-
-  //   return {
-  //     getInstance: function (name: string): Logger {
-  //       if (!logger) {
-  //         logger = createInstance(name);
-  //       }
-  //       return logger;
-  //     },
-  //   };
-  // })("");
+  public cloudinaryConfig(): void {
+    cloudinary.config({
+      cloud_name: config.CLOUDINARY_NAME,
+      api_key: config.CLOUDINARY_API_KEY,
+      api_secret: config.CLOUDINARY_API_SECRET,
+    });
+  }
 }
 
 export const config: Config = new Config();

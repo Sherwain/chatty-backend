@@ -1,31 +1,29 @@
 import {
-  CustomerError,
-  IErrorResponse,
-} from "./shared/globals/helpers/error-handler";
-import {
   Application,
   json,
   urlencoded,
   Response,
   Request,
   NextFunction,
+  application,
 } from "express";
 import http from "http";
 import hpp from "hpp";
 import cors from "cors";
 import helmet from "helmet";
+import "express-async-errors";
+import { Server } from "socket.io";
+import { createClient } from "redis";
 import compression from "compression";
 import cookieSession from "cookie-session";
 import HTTP_STATUS from "http-status-codes";
-import { Server } from "socket.io";
-import { createClient } from "redis";
 import { createAdapter } from "@socket.io/redis-adapter";
-import "express-async-errors";
-import { config } from "./config";
-import AppRoutes from "./routes";
+import { CustomerError, IErrorResponse } from "@global/helpers/error-handler";
+import { config } from "@root/config";
+import AppRoutes from "@root/routes";
 
 const LOG = config.LOG.getInstance("server");
-const SERVER_PORT = 3000;
+const SERVER_PORT = 4000;
 
 export class ChattyServer {
   private app: Application;
@@ -70,7 +68,9 @@ export class ChattyServer {
     this.app.use(urlencoded({ extended: true, limit: "50mb" }));
   }
 
-  private routeMiddleware(): void {}
+  private routeMiddleware(): void {
+    AppRoutes(this.app);
+  }
 
   private globalHandler(): void {
     this.app.all("*", (req: Request, res: Response) => {
