@@ -18,7 +18,7 @@ import compression from "compression";
 import cookieSession from "cookie-session";
 import HTTP_STATUS from "http-status-codes";
 import { createAdapter } from "@socket.io/redis-adapter";
-import { CustomerError, IErrorResponse } from "@global/helpers/error-handler";
+import { CustomError, IErrorResponse } from "@global/helpers/error-handler";
 import { config } from "@root/config";
 import AppRoutes from "@root/routes";
 
@@ -86,7 +86,7 @@ export class ChattyServer {
         next: NextFunction
       ) => {
         LOG.error(error);
-        if (error instanceof CustomerError)
+        if (error instanceof CustomError)
           return res.status(error.statusCode).json(error.serializeErrors());
       }
     );

@@ -1,8 +1,7 @@
-import Logger from "bunyan";
 import { config } from "@root/config";
-import { BaseCache } from "@service/redis/base.cache";
+import { BaseCache } from "@service/redis/base-cache";
 
-const LOG = config.LOG.getInstance("RedisConnection");
+const log = config.LOG.getInstance("RedisConnection");
 
 class RedisConnection extends BaseCache {
   constructor() {
@@ -14,13 +13,13 @@ class RedisConnection extends BaseCache {
       this.client
         .connect()
         .then((data) => {
-          LOG.info("Connected to redis server!");
+          log.info("Connected to redis server!");
         })
         .catch((err) => {
-          LOG.error("Error", err);
+          log.error("Error", err);
         });
     } catch (error) {
-      LOG.error(error);
+      log.error(error);
     }
   }
 }

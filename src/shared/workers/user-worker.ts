@@ -1,9 +1,9 @@
-import { UserCache } from "@service/redis/user.cache";
-import { userService } from "@service/db/user.service";
+import { UserCache } from "@service/redis/user-cache";
+import { userService } from "@service/db/user-service";
 import { DoneCallback, Job } from "bull";
 import { config } from "@root/config";
 
-const LOG = config.LOG.getInstance("userWorker");
+const LOG = config.LOG.getInstance("UserWorker");
 
 class UserWorker {
   async addUserToDB(job: Job, done: DoneCallback): Promise<void> {

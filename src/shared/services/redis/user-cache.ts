@@ -1,7 +1,7 @@
-import { BaseCache } from "@service/redis/base.cache";
+import { BaseCache } from "@service/redis/base-cache";
 import { ServerError } from "@global/helpers/error-handler";
 import { config } from "@root/config";
-import { IUserDocument } from "@user/interfaces/user.interface";
+import { IUserDocument } from "@user/interfaces/user-interface";
 import { Helpers } from "@global/helpers/helper";
 
 const log = config.LOG.getInstance("server");

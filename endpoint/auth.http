@@ -35,6 +35,26 @@ Accept: application/json
 
 
 ###
+POST {{baseUrl}}/{{urlPath}}/auth/forgot-password
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "sherwainwilliamson@yahoo.com"
+}
+
+
+###
+POST {{baseUrl}}/{{urlPath}}/auth/reset-password/c0099c7716ca19d440199cb419ea4b7429724b97
+Content-Type: application/json
+Accept: application/json
+
+{
+  "password": "sherwain",
+  "confirmPassword": "sherwain"
+}
+
+###
 GET {{baseUrl}}/{{urlPath}}/auth/logout
 # Content-Type: application/json
 Accept: application/json

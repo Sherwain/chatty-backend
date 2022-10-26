@@ -1,4 +1,4 @@
-import { IAuthJob } from "@auth/interfaces/auth.interface";
+import { IAuthJob } from "@auth/interfaces/auth-interface";
 import { createAdapter } from "@socket.io/redis-adapter";
 import Queue, { Job } from "bull";
 import { config } from "@root/config";
@@ -6,12 +6,13 @@ import { createBullBoard } from "@bull-board/api";
 import { BullAdapter } from "@bull-board/api/bullAdapter";
 import { ExpressAdapter } from "@bull-board/express";
 import Logger from "bunyan";
+import { IEmailJob } from "@user/interfaces/user-interface";
 
 let bullAdapters: BullAdapter[] = [];
 
 export let serverAdapter: ExpressAdapter;
 
-type IBaseJobData = IAuthJob;
+type IBaseJobData = IAuthJob | IEmailJob;
 
 export abstract class BaseQueue {
   queue: Queue.Queue;

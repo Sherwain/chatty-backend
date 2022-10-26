@@ -1,8 +1,8 @@
-import { authQueue } from "./../../../shared/services/queues/auth.queue";
-import { UserCache } from "@service/redis/user.cache";
+import { authQueue } from "@service/queues/auth-queue";
+import { UserCache } from "@service/redis/user-cache";
 import HTTP_STATUS from "http-status-codes";
-import { IAuthDocument, ISignUpData } from "@auth/interfaces/auth.interface";
-import { authService } from "@service/db/auth.service";
+import { IAuthDocument, ISignUpData } from "@auth/interfaces/auth-interface";
+import { authService } from "@service/db/auth-service";
 import { ObjectId } from "mongodb";
 import { Request, Response } from "express";
 import { JoiValidation } from "@global/decorators/joi-validator.decorators";
@@ -13,9 +13,9 @@ import { upload } from "@service/cloud/cloudinary";
 import { config } from "@root/config";
 import Logger from "bunyan";
 import { Helpers } from "@global/helpers/helper";
-import { IUserDocument } from "@user/interfaces/user.interface";
+import { IUserDocument } from "@user/interfaces/user-interface";
 import { omit } from "lodash";
-import { userQueue } from "@service/queues/user.queue";
+import { userQueue } from "@service/queues/user-queue";
 import JWT from "jsonwebtoken";
 
 const LOG: Logger = config.LOG.getInstance("server");
@@ -40,7 +40,7 @@ export class SignUp {
     const authData: IAuthDocument = SignUp.prototype.signUpData({
       _id: authObjectId,
       uId,
-      email,
+      email: email.toLowerCase(),
       username,
       password,
       avatarColor,
