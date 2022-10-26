@@ -1,6 +1,6 @@
 import mongoose, { Document } from "mongoose";
 import { ObjectId } from "mongodb";
-import { IAuthDocument } from "@auth/interfaces/auth.interface";
+import { IAuthDocument } from "@auth/interfaces/auth-interface";
 
 export interface IUserDocument extends Document {
   _id: string | ObjectId;
@@ -30,7 +30,7 @@ export interface IUserDocument extends Document {
 export interface IResetPasswordParams {
   username: string;
   email: string;
-  ipaddress: string;
+  ipAddress: string;
   date: string;
 }
 
@@ -85,8 +85,8 @@ export interface IUserJob {
 }
 
 export interface IEmailJob {
-  receiverEmail: string;
-  template: string;
+  receiver: string;
+  body: string;
   subject: string;
 }
 

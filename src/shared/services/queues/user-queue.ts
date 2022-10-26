@@ -1,5 +1,5 @@
-import { userWorker } from "@worker/user.worker";
-import { BaseQueue } from "@service/queues/base.queue";
+import { userWorker } from "@worker/user-worker";
+import { BaseQueue } from "@service/queues/base-queue";
 
 class UserQueue extends BaseQueue {
   constructor() {

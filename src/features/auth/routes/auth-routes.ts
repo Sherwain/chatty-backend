@@ -1,9 +1,8 @@
-import { authMiddleware } from "./../../../shared/globals/helpers/auth-middleware";
 import { Login } from "./../controllers/login";
 import { SignUp } from "../controllers/sign-up";
 import express, { Router } from "express";
 import { Logout } from "@auth/controllers/logout";
-import { CurrentUser } from "@auth/controllers/current-user";
+import { Password } from "@auth/controllers/password";
 
 class AuthRoutes {
   private router: Router;
@@ -15,13 +14,11 @@ class AuthRoutes {
   public routes(): Router {
     this.router.post("/auth/signup", SignUp.prototype.create);
     this.router.post("/auth/login", Login.prototype.login);
-
-    // this.router.get(
-    //   "/auth/current-user",
-    //   authMiddleware.verifyUser,
-    //   authMiddleware.checkAUthentication,
-    //   CurrentUser.prototype.currentUser
-    // );
+    this.router.post("/auth/forgot-password", Password.prototype.resetPassword);
+    this.router.post(
+      "/auth/reset-password/:token",
+      Password.prototype.updatePassword
+    );
 
     this.router.get("/auth/getData", SignUp.prototype.getData);
     return this.router;

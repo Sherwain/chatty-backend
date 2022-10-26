@@ -1,5 +1,5 @@
-import { AuthModel } from "@auth/models/auth.schema";
-import { IUserDocument } from "@user/interfaces/user.interface";
+import { AuthModel } from "@auth/models/auth-schema";
+import { IUserDocument } from "@user/interfaces/user-interface";
 import mongoose, { model, Model, Schema } from "mongoose";
 
 const userSchema: Schema = new Schema({
@@ -23,13 +23,6 @@ const userSchema: Schema = new Schema({
   followingCount: {
     type: Number,
     default: 0,
-  },
-  passwordResetToken: {
-    type: String,
-    default: "",
-  },
-  passwordResetExpires: {
-    type: Number,
   },
   blocked: [
     {

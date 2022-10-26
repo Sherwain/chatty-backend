@@ -1,5 +1,4 @@
 import { config } from "@root/config";
-import { string } from "joi";
 
 const log = config.LOG.getInstance("server");
 

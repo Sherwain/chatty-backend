@@ -1,4 +1,4 @@
-import { AuthPayload } from "./../../../features/auth/interfaces/auth.interface";
+import { AuthPayload } from "@auth/interfaces/auth-interface";
 import { NotAuthorizedError } from "./error-handler";
 import { config } from "@root/config";
 import { Request, Response, NextFunction } from "express";

@@ -1,8 +1,8 @@
-import { authService } from "@service/db/auth.service";
+import { authService } from "@service/db/auth-service";
 import { DoneCallback, Job } from "bull";
 import { config } from "@root/config";
 
-const LOG = config.LOG.getInstance("authWorker");
+const LOG = config.LOG.getInstance("AuthWorker");
 
 class AuthWorker {
   async addAuthUserToDB(job: Job, done: DoneCallback): Promise<void> {
