@@ -1,4 +1,3 @@
-import { updatedPost } from "./../../../mocks/post.mock";
 import {
   IPostDocument,
   IReactions,
