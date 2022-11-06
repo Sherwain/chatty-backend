@@ -4,7 +4,7 @@ import { config } from "@root/config";
 import { IUserDocument } from "@user/interfaces/user-interface";
 import { Helpers } from "@global/helpers/helper";
 
-const log = config.LOG.getInstance("server");
+const log = config.LOG.getInstance("UserCache");
 
 export class UserCache extends BaseCache {
   constructor() {
@@ -72,12 +72,14 @@ export class UserCache extends BaseCache {
       if (!this.client.isOpen) {
         this.client.connect();
       }
-      await this.client.ZADD("user", {
-        score: parseInt(uId, 10),
-        value: `${key}`,
-      });
-
-      await this.client.HSET(`user:${key}`, dataToSave);
+      const transaction = this.client.multi();
+      transaction
+        .ZADD("users", {
+          score: parseInt(uId, 10),
+          value: `${key}`,
+        })
+        .HSET(`user:${key}`, dataToSave)
+        .exec();
     } catch (error) {
       log.error(error);
       throw new ServerError("Server error. Try again");

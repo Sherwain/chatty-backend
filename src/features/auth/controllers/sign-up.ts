@@ -18,7 +18,7 @@ import { omit } from "lodash";
 import { userQueue } from "@service/queues/user-queue";
 import JWT from "jsonwebtoken";
 
-const LOG: Logger = config.LOG.getInstance("server");
+const log: Logger = config.LOG.getInstance("server");
 const userCache: UserCache = new UserCache();
 
 export class SignUp {
@@ -53,7 +53,7 @@ export class SignUp {
       true
     )) as UploadApiResponse;
     if (!result?.public_id) {
-      LOG.error("Error occurred");
+      log.error("Error occurred");
       throw new BadRequestError(
         "File upload: Error occurred. Please try again..."
       );
@@ -81,7 +81,6 @@ export class SignUp {
 
     const userJWT: string = SignUp.prototype.signToken(authData, userObjectId);
     req.session = { jwt: userJWT };
-    // req.currentUser = userJWT;
 
     res.status(HTTP_STATUS.CREATED).json({
       message: "User created successfully!",
@@ -104,7 +103,7 @@ export class SignUp {
   }
 
   public async getData(req: Request, res: Response): Promise<void> {
-    LOG.info("In the get data endpoint");
+    log.info("In the get data endpoint");
     res.status(HTTP_STATUS.ACCEPTED).json({ message: "OK" });
   }
 
@@ -131,15 +130,15 @@ export class SignUp {
       email,
       password,
       avatarColor,
-      profilePicture: "",
+      profilePicture: null,
       blocked: [],
       blockedBy: [],
-      work: "",
-      location: "",
-      school: "",
-      quote: "",
-      bgImageVersion: "",
-      bgImageId: "",
+      work: null,
+      location: null,
+      school: null,
+      quote: null,
+      bgImageVersion: null,
+      bgImageId: null,
       followersCount: 0,
       followingCount: 0,
       postsCount: 0,
@@ -150,10 +149,10 @@ export class SignUp {
         follows: true,
       },
       social: {
-        facebook: "",
-        instagram: "",
-        twitter: "",
-        youtube: "",
+        facebook: null,
+        instagram: null,
+        twitter: null,
+        youtube: null,
       },
     } as unknown as IUserDocument;
   }

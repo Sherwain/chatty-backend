@@ -1,3 +1,4 @@
+import { SocketIOPostHandler } from "./shared/sockets/post-socket";
 import {
   Application,
   json,
@@ -127,5 +128,10 @@ export class ChattyServer {
     });
   }
 
-  private socketIOConnections(io: Server): void {}
+  private socketIOConnections(io: Server): void {
+    const socketIOPostHandler: SocketIOPostHandler = new SocketIOPostHandler(
+      io
+    );
+    socketIOPostHandler.listen();
+  }
 }
