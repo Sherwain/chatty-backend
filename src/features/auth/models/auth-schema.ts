@@ -11,11 +11,12 @@ const authSchema: Schema = new Schema(
     email: { type: String },
     password: { type: String },
     avatarColor: { type: String },
-    createdAt: { type: Date, default: Date.now },
+    // createdAt: { type: Date, default: Date.now },
     passwordResetToken: { type: String, default: "" },
     passwordResetExpires: { type: Number },
   },
   {
+    timestamps: true,
     toJSON: {
       transform(_doc, ret) {
         delete ret.password;

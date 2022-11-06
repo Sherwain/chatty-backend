@@ -24,5 +24,3 @@ export class Helpers {
     }
   }
 }
-
-// console.log(`${value.chartAt(0).toLowerCase()}${value.slice(1)toLowerCase()}`)

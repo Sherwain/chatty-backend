@@ -27,6 +27,7 @@ const config: Config.InitialOptions = {
   coverageReporters: ["text-summary", "lcov"],
   moduleNameMapper: {
     "@auth/(.*)": ["<rootDir>/src/features/auth/$1"],
+    "@post/(.*)": ["<rootDir>/src/features/post/$1"],
     "@global/(.*)": ["<rootDir>/src/shared/globals/$1"],
     "@service/(.*)": ["<rootDir>/src/shared/services/$1"],
     "@socket/(.*)": ["<rootDir>/src/shared/sockets/$1"],

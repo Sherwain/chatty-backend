@@ -7,12 +7,13 @@ import { BullAdapter } from "@bull-board/api/bullAdapter";
 import { ExpressAdapter } from "@bull-board/express";
 import Logger from "bunyan";
 import { IEmailJob } from "@user/interfaces/user-interface";
+import { IPostJobData } from "@post/interfaces/post-interface";
 
 let bullAdapters: BullAdapter[] = [];
 
 export let serverAdapter: ExpressAdapter;
 
-type IBaseJobData = IAuthJob | IEmailJob;
+type IBaseJobData = IAuthJob | IEmailJob | IPostJobData;
 
 export abstract class BaseQueue {
   queue: Queue.Queue;
