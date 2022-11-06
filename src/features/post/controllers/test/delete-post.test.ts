@@ -39,7 +39,7 @@ describe("Delete", () => {
     const res: Response = postMockResponse();
     jest.spyOn(postServer.socketIOPostServer, "emit");
     jest.spyOn(PostCache.prototype, "deletePostFromCache");
-    jest.spyOn(postQueue, "addPostJob");
+    jest.spyOn(postQueue, "deletePostJob");
 
     await DeletePost.prototype.deletePost(req, res);
     expect(postServer.socketIOPostServer.emit).toHaveBeenCalledWith(
@@ -52,10 +52,10 @@ describe("Delete", () => {
       userId,
       postId
     );
-    // expect(postQueue.deletePostJob).toHaveBeenCalledWith("deletePostFromDB", {
-    //   userId,
-    //   postId,
-    // });
+    expect(postQueue.deletePostJob).toHaveBeenCalledWith("deletePostFromDB", {
+      userId,
+      postId,
+    });
     expect(res.status).toHaveBeenCalledWith(200);
     expect(res.json).toHaveBeenCalledWith({
       message: "Post deleted successfully",
