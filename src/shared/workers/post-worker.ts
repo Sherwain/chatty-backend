@@ -1,7 +1,7 @@
 import { IPostDocument } from "@post/interfaces/post-interface";
 import { postService } from "./../services/db/post-service";
 import { DoneCallback, Job } from "bull";
-import { config } from "@root/config";\
+import { config } from "@root/config";
 
 const log = config.LOG.getInstance("PostWorker");
 
