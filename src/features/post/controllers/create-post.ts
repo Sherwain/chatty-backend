@@ -1,5 +1,5 @@
 import { postQueue } from "@service/queues/post-queue";
-import { IPostDocument, IReactions } from "@post/interfaces/post-interface";
+import { IPostDocument } from "@post/interfaces/post-interface";
 import { JoiValidation } from "@global/decorators/joi-validator.decorators";
 import { postSchema, postWithImageSchema } from "@post/joi-schemas/post";
 import { Response, Request } from "express";
@@ -11,6 +11,7 @@ import { upload } from "@service/cloud/cloudinary";
 import { UploadApiResponse } from "cloudinary";
 import { config } from "@root/config";
 import { BadRequestError } from "@global/helpers/error-handler";
+import { IReactions } from "@reaction/interfaces/reaction-interface";
 
 const log = config.LOG.getInstance("server");
 
@@ -38,7 +39,7 @@ export class Post {
       reactions: {
         like: 0,
         love: 0,
-        haha: 0,
+        happy: 0,
         wow: 0,
         sad: 0,
         angry: 0,
@@ -98,7 +99,7 @@ export class Post {
       reactions: {
         like: 0,
         love: 0,
-        haha: 0,
+        happy: 0,
         wow: 0,
         sad: 0,
         angry: 0,

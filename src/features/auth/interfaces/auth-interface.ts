@@ -21,6 +21,7 @@ export interface AuthPayload {
 
 export interface IAuthDocument extends Document {
   _id: string | ObjectId;
+  userId: string | ObjectId;
   uId: string;
   username: string;
   email: string;
@@ -35,6 +36,7 @@ export interface IAuthDocument extends Document {
 
 export interface ISignUpData {
   _id: ObjectId;
+  userId: ObjectId;
   uId: string;
   email: string;
   username: string;

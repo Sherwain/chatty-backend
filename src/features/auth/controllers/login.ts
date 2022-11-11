@@ -35,8 +35,8 @@ export class Login {
     const matchedPassword: boolean = await authUser.comparePassword(password);
     if (!matchedPassword) throw new BadRequestError("Invalid credentials");
 
-    const user: IUserDocument = await userService.getUserByAuthId(
-      authUser._id.toString()
+    const user: IUserDocument = await userService.getUserById(
+      `${authUser.userId}`
     );
 
     const userJWT: string = JWT.sign(

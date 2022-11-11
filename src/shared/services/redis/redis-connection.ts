@@ -10,14 +10,16 @@ class RedisConnection extends BaseCache {
 
   connect(): void {
     try {
-      this.client
-        .connect()
-        .then((data) => {
-          log.info("Connected to redis server!");
-        })
-        .catch((err) => {
-          log.error("Error", err);
-        });
+      if (!this.client.isOpen) {
+        this.client
+          .connect()
+          .then((data) => {
+            log.info("Connected to redis server!");
+          })
+          .catch((err) => {
+            log.error("Error", err);
+          });
+      }
     } catch (error) {
       log.error(error);
     }

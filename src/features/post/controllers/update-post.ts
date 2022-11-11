@@ -97,7 +97,7 @@ export class UpdatePost {
     const updatedPostData = await postCache.updatePostInCache(postId, postData);
     socketIOPostServer.emit("updated-post", updatedPostData, "post");
     postQueue.updatePostJob("updatePostInDB", {
-      postData: updatedPostData,
+      postData: postData,
       postId,
     });
   }

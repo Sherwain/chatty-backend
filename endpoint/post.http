@@ -8,9 +8,9 @@ Accept: application/json
 withCredentials: true
 
 {
-  "post": "I love to post",
+  "post": "This is my seventh post",
   "bgColor": "#0000ff",
-  "privacy": "friends",
+  "privacy": "Public",
   "gifUrl": "blue",
   "profilePicture": "https://res.cloudinary.com/cloudie/image/upload/v1666647126/chatty/635704565b6c68343b441372",
   "feelings": "happy"
@@ -24,7 +24,7 @@ Accept: application/json
 withCredentials: true
 
 {
-  "post": "This is my seventh post with image",
+  "post": "This is my eighth post with image",
   "bgColor": "#0000ff",
   "privacy": "friends",
   "gifUrl": "blue",
@@ -35,7 +35,7 @@ withCredentials: true
 
 
 ###
-GET {{baseUrl}}/{{urlPath}}/posts/2
+GET {{baseUrl}}/{{urlPath}}/posts/1
 Content-Type: application/json
 Accept: application/json
 withCredentials: true
@@ -58,13 +58,13 @@ withCredentials: true
 
 
 ###
-PUT {{baseUrl}}/{{urlPath}}/post/63653cbfb2e1b75f3dd859a8
+PUT {{baseUrl}}/{{urlPath}}/post/636dc51ddf7b0ab11a363eee
 Content-Type: application/json
 Accept: application/json
 withCredentials: true
 
 {
-  "post": "This is my sixth post updated and again!",
+  "post": "This is my second post updated!",
   "bgColor": "#0000ff",
   "privacy": "Private",
   "gifUrl": "blue",

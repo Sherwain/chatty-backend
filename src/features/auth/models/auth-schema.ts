@@ -1,3 +1,4 @@
+import { UserModel } from "@user/models/user-schema";
 import { hash, compare } from "bcryptjs";
 import { IAuthDocument } from "@auth/interfaces/auth-interface";
 import { model, Model, Schema } from "mongoose";
@@ -6,12 +7,12 @@ const SALT_ROUND = 12;
 
 const authSchema: Schema = new Schema(
   {
+    userId: { type: Schema.Types.ObjectId, ref: UserModel },
     username: { type: String },
     uId: { type: String },
     email: { type: String },
     password: { type: String },
     avatarColor: { type: String },
-    // createdAt: { type: Date, default: Date.now },
     passwordResetToken: { type: String, default: "" },
     passwordResetExpires: { type: Number },
   },

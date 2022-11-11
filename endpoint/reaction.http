@@ -1,0 +1,45 @@
+@baseUrl = http://localhost:4000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/post/reaction
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "postCreator": "636dc3dfdf7b0ab11a363ee1",
+  "postId": "636dc49edf7b0ab11a363ee6",
+  "reaction": "like"
+}
+
+###
+DELETE {{baseUrl}}/{{urlPath}}/post/reaction/636dc49edf7b0ab11a363ee6/wow
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+
+// all reactions for a post
+###
+GET {{baseUrl}}/{{urlPath}}/post/reactions/all/636dc49edf7b0ab11a363ee6
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+// all reactions for a user
+###
+GET {{baseUrl}}/{{urlPath}}/post/reactions/636dc3dfdf7b0ab11a363ee1
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+// single reaction single post
+###
+GET {{baseUrl}}/{{urlPath}}/post/reaction/636dc49edf7b0ab11a363ee6/636dc3dfdf7b0ab11a363ee1
+Content-Type: application/json
+Accept: application/json
+withCredentials: true

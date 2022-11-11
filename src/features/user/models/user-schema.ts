@@ -1,14 +1,8 @@
-import { AuthModel } from "@auth/models/auth-schema";
 import { IUserDocument } from "@user/interfaces/user-interface";
 import mongoose, { model, Model, Schema } from "mongoose";
 
 const userSchema: Schema = new Schema(
   {
-    authId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: AuthModel,
-      index: true,
-    },
     profilePicture: {
       type: String,
       default: "",
