@@ -4,6 +4,7 @@ import { serverAdapter } from "@service/queues/base-queue";
 import { authRoutes } from "@auth/routes/auth-routes";
 import { Application } from "express";
 import { currentUserRoutes } from "@auth/routes/current-user";
+import { reactionRoute } from "@reaction/routes/reaction-routes";
 
 const BASE_PATH = "/api/v1";
 
@@ -16,7 +17,9 @@ export default (app: Application) => {
     app.use(BASE_PATH, authMiddleware.verifyUser, currentUserRoutes.routes());
     app.use(BASE_PATH, authMiddleware.verifyUser, postRoutes.routes());
 
-    app.use(BASE_PATH, postRoutes.routes);
+    app.use(BASE_PATH, authMiddleware.verifyUser, reactionRoute.routes());
+
+    app.use(BASE_PATH, authMiddleware.verifyUser, postRoutes.routes);
   };
 
   routes();

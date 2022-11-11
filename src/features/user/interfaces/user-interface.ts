@@ -4,7 +4,6 @@ import { IAuthDocument } from "@auth/interfaces/auth-interface";
 
 export interface IUserDocument extends Document {
   _id: string | ObjectId;
-  authId: IAuthDocument;
   username?: string;
   email?: string;
   password?: string;

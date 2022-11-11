@@ -1,6 +1,5 @@
 import {
   IPostDocument,
-  IReactions,
   ISavePostToCache,
 } from "@post/interfaces/post-interface";
 import { BaseCache } from "@service/redis/base-cache";
@@ -8,6 +7,7 @@ import { ServerError } from "@global/helpers/error-handler";
 import { config } from "@root/config";
 import { Helpers } from "@global/helpers/helper";
 import { RedisCommandRawReply } from "@redis/client/dist/lib/commands";
+import { IReactions } from "@reaction/interfaces/reaction-interface";
 
 const log = config.LOG.getInstance("PostCache");
 export type PostCacheMultiType =
@@ -27,6 +27,7 @@ export class PostCache extends BaseCache {
     post.reactions = Helpers.parseJSON(`${post.reactions}`) as IReactions;
     post.commentsCount = Helpers.parseJSON(`${post.commentsCount}`) as number;
     post.createdAt = new Date(Helpers.parseJSON(`${post.createdAt}`)) as Date;
+
     return post;
   }
 
@@ -154,7 +155,7 @@ export class PostCache extends BaseCache {
         this.client.multi();
 
       for (const post of postList) {
-        transaction.HGETALL(`post:`);
+        transaction.HGETALL(`post:${post}`);
       }
       const posts: PostCacheMultiType =
         (await transaction.exec()) as PostCacheMultiType;

@@ -39,6 +39,7 @@ export class SignUp {
 
     const authData: IAuthDocument = SignUp.prototype.signUpData({
       _id: authObjectId,
+      userId: userObjectId,
       uId,
       email: email.toLowerCase(),
       username,
@@ -108,9 +109,10 @@ export class SignUp {
   }
 
   private signUpData(data: ISignUpData): IAuthDocument {
-    const { _id, username, email, uId, password, avatarColor } = data;
+    const { _id, userId, username, email, uId, password, avatarColor } = data;
     return {
       _id,
+      userId,
       uId,
       username,
       email,
@@ -121,10 +123,10 @@ export class SignUp {
   }
 
   private userData(data: IAuthDocument, userObjectId: ObjectId): IUserDocument {
-    const { _id, username, uId, email, password, avatarColor } = data;
+    const { userId, username, uId, email, password, avatarColor } = data;
     return {
       _id: userObjectId,
-      authId: data,
+      userId,
       uId,
       username: username,
       email,

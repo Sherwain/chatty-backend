@@ -10,19 +10,6 @@ class UserService {
     await UserModel.create(data);
   }
 
-  public async _getUserById(userId: string): Promise<IUserDocument> {
-    const user = await UserModel.findOne({
-      id: new mongoose.Types.ObjectId(userId),
-    }).populate("authId");
-    return user as IUserDocument;
-  }
-
-  public async _getUserByAuthId(authId: string): Promise<IUserDocument> {
-    const user = await UserModel.findOne({ authId: authId }).populate("authId");
-
-    return user as IUserDocument;
-  }
-
   public async getUserById(userId: string): Promise<IUserDocument> {
     log.info("Getting user from mongodb database...");
     const users: IUserDocument[] = await UserModel.aggregate([
@@ -30,8 +17,8 @@ class UserService {
       {
         $lookup: {
           from: "auth",
-          localField: "authId",
-          foreignField: "_id",
+          localField: "_id",
+          foreignField: "userId",
           as: "auth",
         },
       },
@@ -41,14 +28,14 @@ class UserService {
     return users[0];
   }
 
-  public async getUserByAuthId(authId: string): Promise<IUserDocument> {
+  public async getUserByAuthId(id: string): Promise<IUserDocument> {
     const users: IUserDocument[] = await UserModel.aggregate([
-      { $match: { authId: new mongoose.Types.ObjectId(authId) } },
+      { $match: { _id: new mongoose.Types.ObjectId(id) } },
       {
         $lookup: {
           from: "auth",
-          localField: "authId",
-          foreignField: "_id",
+          localField: "_id",
+          foreignField: "userId",
           as: "auth",
         },
       },
