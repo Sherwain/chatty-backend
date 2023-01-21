@@ -6,7 +6,7 @@ import {
   IReactionDocumentResponse,
   IReactions,
   iReactionsKeys,
-  userDetails,
+  UserDetails,
 } from "@reaction/interfaces/reaction-interface";
 import { config } from "@root/config";
 import { BaseCache } from "@service/redis/base-cache";
@@ -261,14 +261,14 @@ export class ReactionCache extends BaseCache {
       profilePicture: creator.profilePicture,
       username: creator.username,
       avatarColor: creator.avatarColor,
-    } as userDetails;
+    } as UserDetails;
 
     const postReactor = {
       _id: reactor._id,
       profilePicture: reactor.profilePicture,
       username: reactor.username,
       avatarColor: reactor.avatarColor,
-    } as userDetails;
+    } as UserDetails;
 
     const reactionResponse: IReactionDocumentResponse = {
       _id: `${reaction._id}`,

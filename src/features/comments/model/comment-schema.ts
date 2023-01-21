@@ -1,22 +1,22 @@
-import { PostModel } from "@post/models/post-schema";
-import { IReactionDocument } from "@reaction/interfaces/reaction-interface";
-import { UserModel } from "@user/models/user-schema";
 import mongoose, { model, Model, Schema } from "mongoose";
+import { ICommentDocument } from "@comment/interfaces/comment-interface";
+import { PostModel } from "@post/models/post-schema";
+import { UserModel } from "@user/models/user-schema";
 
-const reactionSchema: Schema = new Schema(
+const commentSchema: Schema = new Schema(
   {
     postId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: PostModel,
       index: true,
     },
-    reaction: { type: String, default: null },
+    comment: { type: String, default: null },
     postCreator: {
       type: mongoose.Schema.Types.ObjectId,
       ref: UserModel,
       index: true,
     },
-    postReactor: {
+    postCommenter: {
       type: mongoose.Schema.Types.ObjectId,
       ref: UserModel,
       index: true,
@@ -25,10 +25,9 @@ const reactionSchema: Schema = new Schema(
   { timestamps: true }
 );
 
-const ReactionModel: Model<IReactionDocument> = model<IReactionDocument>(
-  "Reaction",
-  reactionSchema,
-  "reaction"
+const CommentsModel: Model<ICommentDocument> = model<ICommentDocument>(
+  "Comment",
+  commentSchema,
+  "comment"
 );
-
-export { ReactionModel };
+export { CommentsModel };
