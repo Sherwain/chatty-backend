@@ -1,0 +1,52 @@
+@baseUrl = http://localhost:4000
+@urlPath = api/v1
+
+###
+POST {{baseUrl}}/{{urlPath}}/post/comment
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+{
+  "postCreator": "636dc3dfdf7b0ab11a363ee1",
+  "postId": "636dc49edf7b0ab11a363ee6",
+  "comment": "This is maddeness!"
+}
+
+###
+DELETE {{baseUrl}}/{{urlPath}}/post/comment/636dc49edf7b0ab11a363ee6/wow
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+// all comments for a post
+###
+GET {{baseUrl}}/{{urlPath}}/post/comments/all/636dc49edf7b0ab11a363ee6
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+// all comments for a user
+###
+GET {{baseUrl}}/{{urlPath}}/post/comments/636ecbd4747f489871a601eb
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+// get comments from a post for a user
+###
+GET {{baseUrl}}/{{urlPath}}/post/comment/636dc49edf7b0ab11a363ee6/636dc3dfdf7b0ab11a363ee1
+Content-Type: application/json
+Accept: application/json
+withCredentials: true
+
+
+// get single comment
+###
+GET {{baseUrl}}/{{urlPath}}/post/comment/6372ac11b336a7dfddb893d6
+Content-Type: application/json
+Accept: application/json
+withCredentials: true

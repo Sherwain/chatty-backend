@@ -1,3 +1,5 @@
+import { ICommentDocument } from "@comment/interfaces/comment-interface";
+import { IReactionDocument } from "@reaction/interfaces/reaction-interface";
 import { config } from "@root/config";
 import { Socket, Server } from "socket.io";
 
@@ -14,7 +16,13 @@ export class SocketIOPostHandler {
 
   public listen(): void {
     this.io.on("connection", (socket: Socket) => {
-      log.info("Post SocketIO handler");
+      socket.on("reaction", (reaction: IReactionDocument) => {
+        this.io.emit("updated-reaction", reaction);
+      });
+
+      socket.on("comment", (comment: ICommentDocument) => {
+        this.io.emit("updated-comment", comment);
+      });
     });
   }
 }

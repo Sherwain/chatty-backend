@@ -11,7 +11,7 @@ export interface IReactionDocument extends Document {
   comment?: string;
 }
 
-export interface userDetails {
+export interface UserDetails {
   _id: string | ObjectId;
   profilePicture: string;
   username: string;
@@ -22,8 +22,8 @@ export interface IReactionDocumentResponse extends Document {
   _id: string | ObjectId;
   reaction: string;
   postId: string;
-  postCreator: userDetails;
-  postReactor: userDetails;
+  postCreator: UserDetails;
+  postReactor: UserDetails;
   createdAt?: Date;
   comment?: string;
 }
